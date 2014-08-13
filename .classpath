@@ -56,5 +56,6 @@
 	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.struts2.MYECLIPSE_STRUTS21_DWR"/>
 	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.struts2.MYECLIPSE_STRUTS21_STRUTS1"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/struts2-spring-plugin-2.1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

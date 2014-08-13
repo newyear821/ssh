@@ -1,4 +1,4 @@
-package com.test.login.DAO;
+package com.test.login.Dao;
 
 import java.util.List;
 

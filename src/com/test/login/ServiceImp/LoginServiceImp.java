@@ -1,9 +1,10 @@
-package com.test.login.Service;
+package com.test.login.ServiceImp;
 
 import java.util.List;
 
-import com.test.login.DAO.LoginDao;
+import com.test.login.Dao.LoginDao;
 import com.test.login.Model.AccountInfo;
+import com.test.login.Service.LoginService;
 
 public class LoginServiceImp implements LoginService{
 	

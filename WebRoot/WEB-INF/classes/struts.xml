@@ -33,6 +33,10 @@
 			<result name="success">/login/success.jsp</result>
 			<result name="input">/login/login.jsp</result>
 		</action>
+		<action name="emailcollect" class="com.test.emailcollect.Action.EmailcollectAction" method="saveEmail">
+			<result name="success">/emailcollect/success.jsp</result>
+			<result name="input">/emailcollect/login.jsp</result>
+		</action>
 	</package>
 
 </struts>

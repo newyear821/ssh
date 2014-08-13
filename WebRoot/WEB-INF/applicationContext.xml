@@ -22,7 +22,9 @@
 		   	<list>
 			    <!--value>test/s2sh/User.hbm.xml</value-->
 			    <value>com/test/login/Model/AccountInfo.hbm.xml</value>
-		    </list>
+			    <value>
+			    	com/test/emailcollect/Model/EmailcollectInfo.hbm.xml
+			    </value></list>
 	    </property>
 		<property name="hibernateProperties">
 			<props>
@@ -32,17 +34,30 @@
 			</props>
 		</property>
 	</bean>
-		<bean id="loginDao" class="com.test.login.DAO.LoginDaoImp">
+	<!-- 登陆模块 -->
+	<bean id="loginDao" class="com.test.login.DaoImp.LoginDaoImp">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	<bean id="loginService" class="com.test.login.Service.LoginServiceImp">
+	<bean id="loginService" class="com.test.login.ServiceImp.LoginServiceImp">
 		<property name="loginDao" ref="loginDao"></property>
 	</bean>
-	<!--  处理用户登录的Action -->
 	<bean id="loginAction" class="com.test.login.Action.LoginAction" scope="prototype">
 		<property name="loginService" ref="loginService"></property>
 	</bean>
 	<bean id="accountInfo" class="com.test.login.Model.AccountInfo">
+	</bean>
+	
+	<!-- 留存邮箱模块 -->
+	<bean id="emailcollectDao" class="com.test.emailcollect.DaoImp.EmailcollectDaoImp">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="emailcollectService" class="com.test.emailcollect.ServiceImp.EmailcollectServiceImp">
+		<property name="emailcollectDao" ref="emailcollectDao"></property>
+	</bean>
+	<bean id="emailcollectAction" class="com.test.emailcollect.Action.EmailcollectAction" scope="prototype">
+		<property name="emailcollectService" ref="emailcollectService"></property>
+	</bean>
+	<bean id="emailInfo" class="com.test.emailcollect.Model.EmailInfo">
 	</bean>
 	
 	</beans>

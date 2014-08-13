@@ -1,4 +1,4 @@
-package com.test.login.DAO;
+package com.test.login.DaoImp;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -10,6 +10,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
+import com.test.login.Dao.LoginDao;
 import com.test.login.Model.AccountInfo;
 
 public class LoginDaoImp implements LoginDao{

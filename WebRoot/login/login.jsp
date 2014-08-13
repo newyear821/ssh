@@ -18,15 +18,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+	<link href="/ssh/login/css/login.css" type="text/css" rel="stylesheet" />
+	<script src="/ssh/common/js/jquery-1.8.2.min.js"></script>
+	<script src="/ssh/login/js/login.js"></script>
   </head>
   
   <body>
-    请登录： <br>
-    <form action="login.action" method="post" name="loginForm">
-    	<input name="accountName"/>
-    	<input name="accountPwd"/>
-    	<input type="submit"/>
-    </form>
+    <form class="loginBox" action="login.action" method="post" name="loginForm">
+		<p>登录</p>
+		<ul>
+			<li class="nameLi">
+				<span>用户名：</span>
+				<input name="accountName"></input>
+			</li>
+			<li class="pwdLi">
+				<span>密码：</span>
+				<input type="password" name="accountPwd"></input>
+			</li>
+			<li class="btnLi">
+				<a href="regist.html">注册</a>
+				<a id="loginSub">登陆</a>
+			</li>
+		</ul>
+	</form>
   </body>
 </html>

@@ -1,0 +1,59 @@
+
+.body, p, ul {
+	margin: 0px;
+	padding: 0px;
+}
+.loginBox {
+	border: 1px solid gray;
+	width: 400px;
+	height: 250px;
+	font-family: 微软雅黑;
+	color: gray;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.loginBox p {
+	border-bottom: 1px solid gray;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-size: 18px;
+	background: #EEE;
+}
+.loginBox ul {
+	padding-top: 40px;
+	padding-left: 60px;
+	list-style: none;
+}
+.loginBox ul li {
+	margin-bottom: 8px;
+}
+li span {
+	display: inline-block;
+	width: 70px;
+}
+li input {
+
+}
+
+.nameLi {
+
+}
+.pwdLi {
+
+}
+.btnLi {
+
+}
+.btnLi a {
+	cursor: pointer;
+	border: 1px solid gray;
+	width: 60px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 40px;
+	margin-top: 20px;
+	display: inline-block;
+	text-decoration: none;
+}
